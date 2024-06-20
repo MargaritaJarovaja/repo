@@ -1,0 +1,23 @@
+{% extends "base.html.twig" %}
+
+{% block title %}API Routes{% endblock %}
+
+{% block body %}
+    <h1>API Routes</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Path</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for route in routes %}
+                <tr>
+                    <td>{{ route.name }}</td>
+                    <td>{{ route.path }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

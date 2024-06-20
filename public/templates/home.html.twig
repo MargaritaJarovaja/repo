@@ -1,0 +1,25 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Home{% endblock %}
+
+{% block body %}
+    <div class="content">
+        <h1>Home</h1>
+        <p>Hej!</p>
+        <p>Jag ska berätta lite om mig själv.</p>
+        <p>Jag har studerat grunderna i programmering länge,
+        och det finns fortfarande en enorm, lång eller snarare
+        oändlig väg av studier och praktik framför mig. I detta
+        skede skulle jag vilja ha det nödvändiga underlaget för
+        en fullständig implementering i arbetsmiljön och vidareutbildning
+        sker utan avbrott i arbetet, utan snarare med dess hjälp. Så mycket
+        som möjligt? Jag tror att detta är väldigt verkligt, den enda
+        svårigheten är att bestämma ögonblicket när du är redo och har
+        allt du behöver. Enligt önskemål från arbetsgivare är programmerare
+        och utvecklare på något sätt födda med minst 3 års arbetserfarenhet!</p>
+        <a href="{{ asset('img/me.JPG') }}">
+            <img src="{{ asset('img/me.JPG') }}" style="width: 200px;" alt="">
+        </a>
+    </div>
+
+{% endblock %}

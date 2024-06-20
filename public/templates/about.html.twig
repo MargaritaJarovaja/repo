@@ -1,0 +1,26 @@
+{# templates/about.html.twig #}
+{% extends "base.html.twig" %}
+
+{% block title %}About{% endblock %}
+
+{% block body %}
+    <div class="content">
+        <h1>About</h1>
+        <p>Syftet med kursen MVC är Kunskap och förståelse för följande punkter:</p>
+        <p>Förmåga att förklara utveckling med hjälp av objektorienterad programmering
+        och databaser i en webbaserad miljö genom att skriva och sammanfatta erfarenheter
+        och observationer från övningar och projekt. Och även skickligheten och förmågan:
+        Tillämpa objektorienterade programmeringsparadigm genom praktiska övningar och projekt.
+        Studenten ska självständigt enligt specifikationen kunna utveckla och driftsätta en
+        webbapplikation där objektorienterad programmering spelar en central roll i ett ramverk
+        tillsammans med databaser. Och vara skicklig i de verktyg och ramverk som används för
+        att utveckla databasdrivna webbapplikationer som en del av webbutveckling.</p>
+        <p>I slutändan, efter avslutad kurs, kommer studenten att på ett övergripande sätt kunna förstå, förklara
+        och argumentera om objektorienterad programmering i ett webbramverk.</p>
+
+        <a href="{{ asset('img/me.JPG') }}">
+            <img src="{{ asset('img/mvc.jpeg') }}" style="width: 500px;" alt="">
+        </a>
+    </div>
+{% endblock %}
+
